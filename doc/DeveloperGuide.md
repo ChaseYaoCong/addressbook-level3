@@ -79,13 +79,38 @@ Use case ends.
 > 3a1. AddressBook shows an error message <br>
   Use case resumes at step 2
 
+#### Use case: Edit Tag
+
+**MSS**
+
+1. User requests to list all availables tags
+2. AddressBook shows a list of tags
+3. User requests to edit a specific tag in the list
+4. AddressBook request confirmation from user of the changes made.
+5. User confirm the changes.
+6. AddressBook saves the changes made to the tag <br>
+Use case ends.
+
+**Extensions**
+
+2a. The list is empty
+
+> Use case ends
+
+3a. The given index is invalid
+
+> 3a1. AddressBook shows an error message <br>
+  Use case resumes at step 2
+
+4a. User exit from the edit function
+> Use case ends <br>
 
 ## Appendix C : Non Functional Requirements
 
 1. Should work on any [mainstream OS](#mainstream-os) as long as it has Java 8 or higher installed.
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
-4. Should favor DOS style commands over Unix-style commands.
+4. Should favor DOS style commands over Unix-style commands
 
 ## Appendix D : Glossary
 
