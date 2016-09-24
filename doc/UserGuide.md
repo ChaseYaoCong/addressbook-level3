@@ -33,6 +33,10 @@ Examples:
 * `add John Doe p/98765432 e/johnd@gmail.com a/John street, block 123, #01-01`
 * `add Betsy Crowe pp/1234567 e/betsycrowe@gmail.com pa/Newgate Prison t/criminal t/friend`
 
+## Edit a person's name: `edit`
+Edits a person's name in the address book based on index.<br>
+Format: `edit INDEX NEW_NAME`
+
 ## Listing all persons : `list`
 Shows a list of all persons in the address book.<br>
 Format: `list`
