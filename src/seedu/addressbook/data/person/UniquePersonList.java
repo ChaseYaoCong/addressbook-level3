@@ -134,10 +134,11 @@ public class UniquePersonList implements Iterable<Person> {
 
 	public void editName(int index, String newName) throws 
 	PersonNotFoundException, IllegalValueException{
-		if(internalList.get(index) == null){
-			throw new PersonNotFoundException();
+		final int OFFSET = 1;
+		if(internalList.size() > index || index <= 0){
+			throw new IllegalValueException(Integer.toString(index));
 		}
-		internalList.get(index).setName(newName);
+		internalList.get(index - OFFSET).setName(newName);
 		
 	}
 
